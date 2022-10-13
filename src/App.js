@@ -16,7 +16,6 @@ import Footer from './sections/Footer';
 import Loader from "./components/Loader";
 import "./App.css";
 import Contact from "./sections/Contact";
-import Cursor from './components/Cursor';
 
 function App() {
   const containerRef = useRef(null);
@@ -56,7 +55,6 @@ function App() {
         <AnimatePresence>
         {loaded ? null : <Loader />}
         </AnimatePresence> 
-          <Cursor />
         <ScrollTriggerProxy />
           <AnimatePresence>
           <main className='App' data-scroll-container ref={containerRef}>

@@ -23,7 +23,7 @@ const Cursor = () => {
       document.removeEventListener('mousemove', mouseMoveEvent);
       cancelAnimationFrame(requestRef.current);
     };
-  }, []);
+  });
 
   const mouseMoveEvent = e => {
     cursorVisible.current = true;

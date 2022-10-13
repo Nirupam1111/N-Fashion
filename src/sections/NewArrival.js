@@ -603,7 +603,6 @@ const NewArrival = () => {
   useLayoutEffect(() => {
     let element = ref.current;
     let scrollingElement = ScrollingRef.current;
-    let rotateElement = rotateRef.current;    
     const text = document.querySelector('.text p');
     text.innerHTML = text.innerText.split("").map(
       (char,i)=>`<span style="transform:rotate(${i*11}deg)">${char}</span>`
