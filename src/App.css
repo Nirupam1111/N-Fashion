@@ -7,8 +7,12 @@
     width: 100vw !important;
   }
 
+    ::-webkit-scrollbar {
+    width: 8px;
+  }
   ::-webkit-scrollbar-track {
       background: transparent;
+      border-radius: 5px;
   }
   
   .cursor-dot,
