@@ -6,6 +6,10 @@
     overflow-x: hidden !important;
     width: 100vw !important;
   }
+
+  ::-webkit-scrollbar-track {
+      background: transparent;
+  }
   
   .cursor-dot,
   .cursor-dot-outline {
