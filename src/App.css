@@ -1,0 +1,52 @@
+* {
+    cursor: none;
+}
+
+  body{
+    overflow-x: hidden !important;
+    width: 100vw !important;
+  }
+  
+  .cursor-dot,
+  .cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .cursor-dot {
+    z-index: 100000000000000000000000000000;
+    width: 8px;
+    height: 8px;
+    background-color: #dc5656;
+
+  }
+  
+  .cursor-dot-outline {
+    z-index: 100000000000000000000000000000;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(229, 128, 128, 0.5);
+  }
+
+  @media (pointer:coarse) {
+    .cursor-dot {
+        display: none;
+    }
+  }
+  
+  @media (pointer:coarse) {
+    .cursor-dot-outline {
+        display: none;
+    }
+  }
+  @media (pointer:coarse) {
+    .trail {
+        display: none;
+    }
+  }
