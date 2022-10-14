@@ -2,6 +2,7 @@
   cursor: none;
 }
 
+<<<<<<< HEAD
 body{
   overflow-x: hidden !important;
   width: 100vw !important;
@@ -46,16 +47,71 @@ body{
 @media (pointer:coarse) {
   .cursor-dot {
       display: none;
+=======
+  body{
+    overflow-x: hidden !important;
+    width: 100vw !important;
+  }
+
+    ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 5px;
+  }
+  
+  .cursor-dot,
+  .cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .cursor-dot {
+    z-index: 2047483647 !important;
+    width: 8px;
+    height: 8px;
+    background-color: #dc5656;
+
+>>>>>>> fe1235fcefc4098fa47ddc127bcf45c6a59f72eb
   }
 }
 
 @media (pointer:coarse) {
   .cursor-dot-outline {
+<<<<<<< HEAD
       display: none;
+=======
+    z-index: 2047483640 !important;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(229, 128, 128, 0.5);
+>>>>>>> fe1235fcefc4098fa47ddc127bcf45c6a59f72eb
   }
 }
 @media (pointer:coarse) {
   .trail {
       display: none;
   }
+<<<<<<< HEAD
 }
+=======
+  
+  @media (pointer:coarse) {
+    .cursor-dot-outline {
+        display: none;
+    }
+  }
+  @media (pointer:coarse) {
+    .trail {
+        display: none;
+    }
+  }
+>>>>>>> fe1235fcefc4098fa47ddc127bcf45c6a59f72eb
